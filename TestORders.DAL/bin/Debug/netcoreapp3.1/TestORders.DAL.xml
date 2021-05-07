@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestORders.DAL</name>
+    </assembly>
+    <members>
+        <member name="T:TestORders.DAL.EF.SQLServerContext">
+            <summary>
+            Data context for MS SQL Server.
+            </summary>
+        </member>
+        <member name="T:TestORders.DAL.Entities.Customer">
+            <summary>
+            Customer class.
+            Model for customers in DB.
+            </summary>
+        </member>
+        <member name="T:TestORders.DAL.Entities.Order">
+            <summary>
+            Order class.
+            Model for order in DB.
+            </summary>
+        </member>
+    </members>
+</doc>

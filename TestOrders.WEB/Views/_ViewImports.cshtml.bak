@@ -1,0 +1,3 @@
+﻿@using TestOrders.WEB
+@using TestOrders.WEB.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

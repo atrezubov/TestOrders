@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestOrders.BLL</name>
+    </assembly>
+    <members>
+        <member name="T:TestOrders.BLL.Interfaces.ICustomers">
+            <summary>
+            Interface for work with customer(s).
+            </summary>
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.GetCustomersListAsync">
+            Get customers list async.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.GetCustomersList">
+            Get customers list.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.GetCustomerAsync(System.Int32)">
+            Get customer async.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.GetCustomer(System.Int32)">
+            Get customer.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.CreateCustomerAsync(TestOrders.BLL.Models.CustomerBLL)">
+            Create customer async.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.CreateCustomer(TestOrders.BLL.Models.CustomerBLL)">
+            Create customer.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.EditCustomerAsync(TestOrders.BLL.Models.CustomerBLL)">
+            Edit customer async (delete/restore heare too).
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.ICustomers.EditCustomer(TestOrders.BLL.Models.CustomerBLL)">
+            Edit customer (delete/restore here too).
+        </member>
+        <member name="T:TestOrders.BLL.Interfaces.IOrders">
+            <summary>
+            Interface for work with orders.
+            </summary>
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.GetOrdersListAsync(System.Int32)">
+            Get list of orders async.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.GetOrdersList(System.Int32)">
+            Get list of orders.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.GetOrderAsync(System.Int32)">
+            Get order async.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.GetOrder(System.Int32)">
+            Get order.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.CreateOrderAsync(TestOrders.BLL.Models.OrderBLL)">
+            Create order async.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.CreateOrder(TestOrders.BLL.Models.OrderBLL)">
+            Create order.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.UpdateOrderAsync(TestOrders.BLL.Models.OrderBLL)">
+            Changes Deleted field only.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.UpdateOrder(TestOrders.BLL.Models.OrderBLL)">
+            Changes Deleted field only.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.DeleteOrderAsync(System.Int32)">
+            Delete order async.
+        </member>
+        <member name="M:TestOrders.BLL.Interfaces.IOrders.DeleteOrder(System.Int32)">
+            Delete order.
+        </member>
+        <member name="T:TestOrders.BLL.Models.CustomerBLL">
+            <summary>
+            Customer model for buisiness layer.
+            </summary>
+        </member>
+        <member name="T:TestOrders.BLL.Services.CustomerSQL">
+            <summary>
+            Realisation of ICustomers interface for MS SQL Server.
+            </summary>
+        </member>
+        <member name="M:TestOrders.BLL.Services.CustomerSQL.makeCustomer(TestOrders.BLL.Models.CustomerBLL)">
+            Common function for synchronous and asynchronous methods.
+        </member>
+        <member name="M:TestOrders.BLL.Services.CustomerSQL.makeCustomerBLL(TestOrders.DAL.Entities.Customer)">
+            Common function for synchronous and asynchronous methods.
+        </member>
+        <member name="T:TestOrders.BLL.Services.OrderSQL">
+            <summary>
+            Realisation of IOrders interface for MS SQL Server.
+            </summary>
+        </member>
+        <member name="M:TestOrders.BLL.Services.OrderSQL.makeOrder(TestOrders.BLL.Models.OrderBLL)">
+            Common function for synchronous and asynchronous methods.
+        </member>
+        <member name="M:TestOrders.BLL.Services.OrderSQL.makeOrderBLL(TestOrders.DAL.Entities.Order)">
+            Common function for synchronous and asynchronous methods.
+        </member>
+        <member name="M:TestOrders.BLL.Services.OrderSQL.UpdateOrder(TestOrders.BLL.Models.OrderBLL)">
+            Changes Deleted field only.
+        </member>
+        <member name="M:TestOrders.BLL.Services.OrderSQL.UpdateOrderAsync(TestOrders.BLL.Models.OrderBLL)">
+            Changes Deleted field only.
+        </member>
+        <member name="M:TestOrders.BLL.Services.OrderSQL.DeleteOrderAsync(System.Int32)">
+            Deleting order by id async.
+        </member>
+        <member name="M:TestOrders.BLL.Services.OrderSQL.DeleteOrder(System.Int32)">
+            Deleting order by id.
+        </member>
+    </members>
+</doc>
